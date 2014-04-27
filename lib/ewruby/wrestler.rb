@@ -1,0 +1,12 @@
+require_relative "wrestler/attributes"
+require_relative "wrestler/statistics"
+
+class Wrestler
+  attr_accessor :first_name, :last_name, :moveset, :attributes
+
+  def initialize
+    @first_name = @last_name = "" 
+    @moveset = Array.new
+    @attributes = Attributes.new
+  end
+end
