@@ -1,4 +1,4 @@
-require "./ewruby/wrestler"
+require_relative "ewruby/wrestler"
 require "pry"
 
 #EMPIRE Wrestling core module
