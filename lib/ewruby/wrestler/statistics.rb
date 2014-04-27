@@ -1,7 +1,7 @@
 class Statistics
-  attr_accessor :charisma, :power, :speed, :technical
+  attr_accessor :brawl, :charisma, :overness, :power, :speed, :technical
 
   def initialize
-    @charisma = @power = @speed = @technical = 0
+    @brawl = @charisma = @overness = @power = @speed = @technical = 0
   end
 end
