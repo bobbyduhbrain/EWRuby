@@ -2,11 +2,12 @@ require_relative "wrestler/attributes"
 require_relative "wrestler/statistics"
 
 class Wrestler
-  attr_accessor :first_name, :last_name, :moveset, :attributes
+  attr_accessor :attributes, :first_name, :gimmicks, :last_name, :moveset
 
   def initialize
-    @first_name = @last_name = "" 
-    @moveset = Array.new
     @attributes = Attributes.new
+    @first_name = @last_name = "" 
+    @gimmicks = Array.new
+    @moveset = Array.new
   end
 end
