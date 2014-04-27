@@ -1,7 +1,8 @@
 require_relative "wrestler/attributes"
 require_relative "wrestler/statistics"
+require "activerecord"
 
-class Wrestler
+class Wrestler < ActiveRecord::Base
   attr_accessor :first_name, :last_name, :moveset, :attributes
 
   def initialize
