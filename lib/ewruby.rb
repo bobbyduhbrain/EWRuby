@@ -1,4 +1,6 @@
 require "./ewruby/wrestler"
+require "activerecord"
+require "sqlite3"
 require "pry"
 
 #EMPIRE Wrestling core module
