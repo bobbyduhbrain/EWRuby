@@ -4,6 +4,6 @@ class GameWorld
   attr_accessor :gimmicks, :moves, :promotions, :wrestlers
 
   def initialize
-    @gimmicks = @moves = @promotions = @wrestlers = Array.new
+    @gimmicks, @moves, @promotions, @wrestlers = Array.new(4) { [] }
   end
 end

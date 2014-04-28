@@ -3,6 +3,6 @@ class Promotion
 
   def initialize
     @name = ""
-    @roster = @titles = Array.new
+    @roster, @titles = Array.new(2) { [] }
   end
 end

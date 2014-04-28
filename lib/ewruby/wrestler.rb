@@ -6,7 +6,7 @@ class Wrestler
 
   def initialize
     @attributes = Attributes.new
-    @first_name = @last_name = "" 
-    @contracts = @gimmicks = @moveset = Array.new
+    @first_name, @last_name = "", ""
+    @contracts, @gimmicks, @moveset = Array.new(3) { [] }
   end
 end

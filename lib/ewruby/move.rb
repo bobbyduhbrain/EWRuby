@@ -5,7 +5,7 @@ class Move
   attr_accessor :name, :base, :attributes, :statistics
 
   def initialize
-    @name = @base = ""
+    @name, @base = "", ""
     @attributes = Attributes.new
     @statistics = Statistics.new
   end 
