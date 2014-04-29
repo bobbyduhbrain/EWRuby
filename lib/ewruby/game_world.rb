@@ -1,4 +1,4 @@
-Dir["./lib/ewruby/*.rb"].each {|file| require file }
+Dir["./lib/ewruby/game_world/*.rb"].each {|file| require file }
 
 class GameWorld
   attr_accessor :gimmicks, :moves, :promotions, :wrestlers
