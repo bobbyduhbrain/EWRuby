@@ -5,6 +5,5 @@ require "pry"
 # EWRuby core module
 module EWRuby 
   class << self
-    binding.pry
   end
 end
