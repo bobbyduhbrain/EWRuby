@@ -1,8 +1,6 @@
-require_relative "ewruby/game_world"
-
+Dir["./lib/ewruby/*.rb"].each {|file| require file }
 require "pry"
 
-# EWRuby core module
 module EWRuby 
   class << self
     binding.pry
