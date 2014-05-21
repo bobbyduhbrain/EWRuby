@@ -31,4 +31,8 @@ class Wrestler
   def [](key)
     self.data[key.to_sym]
   end
+
+  def []=(key, value)
+    self.data[key.to_sym] = value
+  end
 end

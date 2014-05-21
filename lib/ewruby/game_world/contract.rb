@@ -7,13 +7,17 @@ class Contract
   def initialize
     @data ||= {
       dollars_per_month: 0,
-      promotion: Promotion.new,
+      promotion: nil,
       type: "Written",
-      wrestler: Wrestler.new
+      wrestler: nil
     }
   end
 
   def [](key)
     self.data[key.to_sym]
+  end
+
+  def []=(key, value)
+    self.data[key.to_sym] = value
   end
 end
