@@ -1,9 +1,13 @@
 class Gimmick
-  attr_accessor :alignment, :description, :name, :popularity, :risk, :wild_card
+  attr_accessor :data
 
   def initialize
-    @alignment = "Neutral"                #Can be Face/Neutral/Heel alignment
-    @description = @name = ""
-    @popularity = @risk = @wild_card = 0
+    @data ||= {
+      alignment: "Face",
+      description: "Superhero",
+      popularity: 0,
+      risk: 0,
+      wild_card: 0
+    }
   end
 end
