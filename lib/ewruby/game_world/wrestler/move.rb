@@ -1,14 +1,25 @@
-require_relative "move/attributes"
-require_relative "move/statistics"
-require_relative "move/type"
-
 class Move
-  attr_accessor :name, :type, :attributes, :statistics
+  attr_accessor :data
 
   def initialize
-    @name = ""
-    @type = Type.new
-    @attributes = Attributes.new
-    @statistics = Statistics.new
+    @data ||={
+      attributes:{
+        bleeding: false,
+        knockout: false,
+        disqualification: false
+      },
+      name: "",
+      statistics: {
+        difficulty: 0,
+        impact: 0,
+        power: 0,
+        risk: 0,
+        speed: 0
+      },
+      type: {
+        name: "",
+        affected_body_parts: Array.new
+      }
+    }
   end 
 end
