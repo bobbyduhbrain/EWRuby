@@ -8,4 +8,8 @@ class Promotion
       titles: Array.new
     }
   end
+  
+  def [](key)
+    self.data[key.to_sym]
+  end
 end

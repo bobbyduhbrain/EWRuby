@@ -10,4 +10,8 @@ class Gimmick
       wild_card: 0
     }
   end
+
+  def [](key)
+    self.data[key.to_sym]
+  end
 end

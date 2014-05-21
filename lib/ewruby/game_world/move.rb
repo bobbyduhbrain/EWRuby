@@ -21,5 +21,9 @@ class Move
         affected_body_parts: Array.new
       }
     }
-  end 
+  end
+
+  def [](key)
+    self.data[key.to_sym]
+  end
 end

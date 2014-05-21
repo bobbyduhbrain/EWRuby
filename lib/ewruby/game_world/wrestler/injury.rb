@@ -9,4 +9,8 @@ class Injury
       end_date: Date.today
     }
   end
+
+  def [](key)
+    self.data[key.to_sym]
+  end
 end

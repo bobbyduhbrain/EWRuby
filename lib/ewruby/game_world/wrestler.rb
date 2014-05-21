@@ -27,4 +27,8 @@ class Wrestler
       }
     }
   end
+
+  def [](key)
+    self.data[key.to_sym]
+  end
 end
