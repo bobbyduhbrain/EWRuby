@@ -1,8 +1,11 @@
 class Promotion
-  attr_accessor :name, :roster, :titles
+  attr_accessor :data
 
   def initialize
-    @name = ""
-    @roster, @titles = Array.new(2) { [] }
+    @data ||= {
+      name: "",
+      roster: Array.new,
+      titles: Array.new
+    }
   end
 end
